@@ -10,14 +10,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'co.elastic.clients:elasticsearch-java:n'
-    compileOnly 'org.projectlombok:lombok:1.18.24'
+    // https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch
+    implementation 'co.elastic.clients:elasticsearch-java:8.5.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
-    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
-    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.1'
-
 }
 
 test {

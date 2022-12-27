@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import java.io.IOException;
 import java.util.List;
 
+
 @AllArgsConstructor
 public class ProductsSearcher implements Runnable {
     private ElasticsearchClient elasticsearchClient;
